@@ -18,6 +18,9 @@
     "uuid": "^11.0.3",
     "web-vitals": "^4.2.4"
   },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0"
+  }
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
