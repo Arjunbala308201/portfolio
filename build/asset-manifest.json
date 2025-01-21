@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.32e719b9.css",
+    "main.js": "/static/js/main.f588d1e9.js",
+    "static/js/488.e75445ad.chunk.js": "/static/js/488.e75445ad.chunk.js",
+    "static/media/Arjun Image2.jpg": "/static/media/Arjun Image2.a3f2582ade63315efa2f.jpg",
+    "static/media/reactlogo2.png": "/static/media/reactlogo2.6bcffb56bd0efaa47767.png",
+    "static/media/whatsappicon.png": "/static/media/whatsappicon.e714b606dde3163f5ddb.png",
+    "static/media/ExpressJS logo.png": "/static/media/ExpressJS logo.6a3e055a6226b08114ef.png",
+    "static/media/html logo.png": "/static/media/html logo.d3a346fb25437f9e9784.png",
+    "static/media/phonelogo.png": "/static/media/phonelogo.053c028d18b6ef9b5700.png",
+    "static/media/linkidin logo.png": "/static/media/linkidin logo.f916e9d7e699cadd309a.png",
+    "static/media/js.logo.jpg": "/static/media/js.logo.843632666871162de92f.jpg",
+    "static/media/mail logo2.jpeg": "/static/media/mail logo2.cf5006789aac67a996e5.jpeg",
+    "static/media/node logo.png": "/static/media/node logo.cce26687ab3abd526b3e.png",
+    "index.html": "/index.html",
+    "main.32e719b9.css.map": "/static/css/main.32e719b9.css.map",
+    "main.f588d1e9.js.map": "/static/js/main.f588d1e9.js.map",
+    "488.e75445ad.chunk.js.map": "/static/js/488.e75445ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32e719b9.css",
+    "static/js/main.f588d1e9.js"
+  ]
+}

@@ -21,10 +21,15 @@ export const Home = () => {
                 is on creating responsive and user-friendly websites, with a keen eye for enhancing user interaction through visually 
                 engaging designs. I am a quick learner, a collaborative team member, and committed to delivering top-notch, client focused web solutions. 
                 </div>
-                <button className='bg-green-600 h-8 w-24 md:h-10 md:w-52 text-sm justify-around text-white font-semibold rounded-md hover:scale-105 transition-all flex items-center md:justify-around md:text-[20px] md:px-12 md:gap-5'>
-                    Resume
-                    <GoDownload/>
-                </button>
+                <div className="flex w-full items-center">
+                  <button className='bg-green-600 h-8 w-28 md:h-10 md:w-52 text-sm justify-around text-white font-semibold rounded-md hover:scale-105 transition-all flex items-center md:justify-around md:text-[20px] md:px-12 md:gap-5'>
+                      Resume
+                      <GoDownload/>
+                  </button>
+                  <div className="rounded-full bg-white h-8 w-8 ml-10 sm:ml-20">
+                    <img src="" alt="" />
+                  </div>
+                </div>
             </div>
             <div data-aos="fade-left" className='md:w-1/2 w-full'>
                 <div className="pic w-full flex justify-center">

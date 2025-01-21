@@ -42,8 +42,16 @@ export const Education = () => {
             <p className='text-[30px] sm:text-[35px] text-white font-bold'>Certifications</p>
             <br />
               <ol className='text-white'>
-                <li className='flex items-center'> <span className='text-green-600 text-[20px]'><RxTriangleRight /></span> &nbsp; Frontend Developer Internship &nbsp; &nbsp; <a href="" className='text-xs text-blue-500 flex items-end h-full'>View</a></li>
-                <li className='flex items-center'> <span className='text-green-600 text-[20px]'><RxTriangleRight /></span> &nbsp; Completion of Frontend Development  &nbsp; &nbsp; <a href="" className='text-xs text-blue-500 flex items-end '>View</a></li>
+                <li className='flex items-center'>
+                   <span className='text-green-600 text-[20px]'><RxTriangleRight /></span>
+                    &nbsp;<div className="flex items-center h-full">Frontend Developer Internship </div> 
+                    &nbsp; &nbsp; <a href="" className='text-xs text-blue-500 flex items-end h-full'>View</a>
+                </li>
+                <li className='flex items-center'>
+                  <span className='text-green-600 text-[20px]'><RxTriangleRight /></span>
+                  &nbsp; <div className="flex items-center h-full">Completion of Frontend Development</div>
+                  &nbsp; &nbsp; <a href="" className='text-xs text-blue-500 flex items-end '>View</a>
+                </li>
               </ol>
               </div>
         </div>
