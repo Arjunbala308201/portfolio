@@ -12,6 +12,14 @@ export const Header = () => {
   const openSideBar=()=>{
     setOpenSidebar(!openSidebar)
   }
+  const smoothScroll = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    window.scrollTo({
+      top: targetElement.offsetTop,
+      behavior: 'smooth'
+    });
+  };
   return (
     <div className="bg-gray-800 mx-auto h-20 w-full text-gray-500" >
       <div className="flex justify-end px-5 sm:p-0 items-center w-full h-full sm:justify-around" >
@@ -23,30 +31,34 @@ export const Header = () => {
         <NavbarComponents  openSideBar={openSideBar}/>
       }
         <div className="sm:flex  hidden sm:justify-around h-full w-full"> 
-        <Link
+        <a
           className={`hover:text-[18px]  hover:text-white hover:font-semibold transition-all h-full flex items-center w-20 justify-center ${curentLocation==='/' ? 'border-b-2 text-white' : ''}`}
-          to="/"
+          href="#about"
+          onClick={(e) => smoothScroll(e, 'about')}
         >
-          Home
-        </Link>
-        <Link
+          About
+        </a>
+        <a
           className={`hover:text-[18px] hover:text-white hover:font-semibold transition-all h-full flex items-center w-20 justify-center ${curentLocation==='/education'?'border-b-2 text-white':''}`}
-          to="/education"
+          href="#education"
+          onClick={(e) => smoothScroll(e, 'education')}
         >
           Education
-        </Link>
-        <Link
+        </a>
+        <a
           className={`hover:text-[18px] hover:text-white hover:font-semibold transition-all h-full flex items-center w-20 justify-center ${curentLocation==='/projects'?'border-b-2 text-white':''}`}
-          to="/projects"
+          href="#projects"
+          onClick={(e) => smoothScroll(e, 'projects')}
         >
           Projects
-        </Link>
-        <Link
+        </a>
+        <a
           className={`hover:text-[18px] hover:text-white hover:font-semibold transition-all h-full flex items-center w-20 justify-center ${curentLocation==='/skills'?'border-b-2 text-white':''}`}
-          to="/skills"
+          href="#skills"
+          onClick={(e) => smoothScroll(e, 'skills')}
         >
           Skills
-        </Link>
+        </a>
         <div className="relative inline-block text-left">
           <div
             onClick={()=>setIsDropdownOpen(!isDropdownOpen)}

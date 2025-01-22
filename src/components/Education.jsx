@@ -10,10 +10,9 @@ export const Education = () => {
   console.log(interncert);
   return (
     <>
-        <div className="w-full bg-gray-900 flex h-full flex-col gap-10 px-6 sm:px-16 ">
-            <br />
+        <div className="w-full bg-gray-900 flex h-full flex-col gap-10 px-6 sm:px-16">
             <div>
-            <p className='text-[30px] sm:text-[35px] text-white font-bold'>My Education</p>
+            <p className='text-[20px] sm:text-[30px] text-white font-bold'>My Education</p>
             <br />
             <div className="w-full  block items-center justify-center gap-10 md:flex">
                 <div data-aos='fade-right' className='md:w-1/3 w-full'>
@@ -40,7 +39,7 @@ export const Education = () => {
             </div>
             </div>
             <div>
-            <p className='text-[30px] sm:text-[35px] text-white font-bold'>Certifications</p>
+            <p className='text-[20px] sm:text-[30px] text-white font-bold'>Certifications</p>
             <br />
               <ol className='text-white'>
                 <li className='flex items-center'>

@@ -5,14 +5,13 @@ import { Outlet } from 'react-router-dom'
 export const Main = () => {
   return (
 
-<div className="parent flex flex-col mx-auto bg-gray-900 min-h-screen w-full">
-  <div className="container mx-auto flex flex-col h-full">
-    <Header />
-    <div className="flex flex-grow bg-gray-900 items-center min-h-[80vh] ">
-      <Outlet />
+    <div className="parent flex flex-col bg-gray-900 min-h-screen">
+      <div className="container mx-auto w-full">
+        <Header />
+        <div className="flex flex-grow bg-gray-900 items-center ">
+          <Outlet />
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
   )
 }
