@@ -25,7 +25,7 @@ export const Dropdown = ({isDropdownOpen,width}) => {
                 Mail
               </a>
                 <a
-                  href="#"
+                  href="tel:+918778799891"
                   className="text-white flex  gap-5 items-center px-4 py-2 text-sm hover:bg-gray-700"
                 >
                   <img src={phonelogo} className="h-5 w-5" alt="Phone logo" />

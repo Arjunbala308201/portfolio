@@ -2,11 +2,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { RxTriangleRight } from "react-icons/rx";
-
+import interncert from '../assets/Intershipcertificate.pdf'
 export const Education = () => {
   useEffect(() => {
     AOS.init({ duration: 500 });
   }, []);
+  console.log(interncert);
   return (
     <>
         <div className="w-full bg-gray-900 flex h-full flex-col gap-10 px-6 sm:px-16 ">
@@ -45,12 +46,12 @@ export const Education = () => {
                 <li className='flex items-center'>
                    <span className='text-green-600 text-[20px]'><RxTriangleRight /></span>
                     &nbsp;<div className="flex items-center h-full">Frontend Developer Internship </div> 
-                    &nbsp; &nbsp; <a href="" className='text-xs text-blue-500 flex items-end h-full'>View</a>
+                    &nbsp; &nbsp; <a href={interncert} className='text-xs text-blue-500 flex items-end h-full' target='blank'>View</a>
                 </li>
                 <li className='flex items-center'>
                   <span className='text-green-600 text-[20px]'><RxTriangleRight /></span>
                   &nbsp; <div className="flex items-center h-full">Completion of Frontend Development</div>
-                  &nbsp; &nbsp; <a href="" className='text-xs text-blue-500 flex items-end '>View</a>
+                  &nbsp; &nbsp; <a href={interncert} className='text-xs text-blue-500 flex items-end' target='blank'>View</a>
                 </li>
               </ol>
               </div>
