@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { a } from 'react-router-dom'
 import { Dropdown } from './Dropdown'
 import { FaArrowLeft } from "react-icons/fa";
 
@@ -26,7 +25,7 @@ export const NavbarComponents = ({openSideBar}) => {
                 </div>
             <div className="py-10">
               
-                <a href='#' className='text-white flex gap-5 items-center px-4 py-2 text-sm hover:bg-gray-700' >Home</a>
+                <a href='#about' className='text-white flex gap-5 items-center px-4 py-2 text-sm hover:bg-gray-700' >Home</a>
                 <a href='#education' className='text-white flex gap-5 items-center px-4 py-2 text-sm hover:bg-gray-700' >Education</a>
                 <a href='#projects' className='text-white flex gap-5 items-center px-4 py-2 text-sm hover:bg-gray-700' >Projects</a>
                 <a href='#skills' className='text-white flex gap-5 items-center px-4 py-2 text-sm hover:bg-gray-700' >Skills</a>

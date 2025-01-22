@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { IoIosMenu } from "react-icons/io";
 import { Dropdown } from './Dropdown';
 import { NavbarComponents } from './NavbarComponents';
