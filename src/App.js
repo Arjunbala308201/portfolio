@@ -7,6 +7,7 @@ import { Education } from './components/Education';
 import 'aos/dist/aos.css'; // Import the AOS styles
 import { Skills } from './components/Skills';
 import { Project } from './components/Project';
+import { Resume } from './components/Resume';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path='/education' element = {<Education/>}/>
             <Route path='/skills' element={<Skills/>}/>
             <Route path='/projects' element={<Project/>}/>
+            <Route path='/resume' element = {<Resume/>}/>
           </Route>
         </Routes>
       </Router>
