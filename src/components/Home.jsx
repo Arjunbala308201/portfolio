@@ -5,16 +5,25 @@ import arjunimg from '../assets/Arjun Image2.jpg'
 import { GoDownload } from "react-icons/go";
 import github from '../assets/GitHub.png'
 import { Link } from 'react-router-dom';
+import { Education } from './Education';
+import { Skills } from './Skills';
+import { Project } from './Project';
+import maillogo from '../assets/mail logo2.jpeg';
+import phonelogo from '../assets/phonelogo.png';
+import linkidinlogo from '../assets/linkidin logo.png';
+import wplogo from '../assets/whatsappicon.png';
 export const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 500 });
   }, []);
   return (
     <>
+    <div className="block">
         <div className=" flex-col-reverse md:flex md:flex-row min-h-[80vh] py-10 justify-center items-center px-10 md:px-20 flex gap-10 w-full ">
             <div  className="content w-full md:w-1/2 flex flex-col gap-5" data-aos="fade-right">
                 <div className="flex flex-col">
-                <div className="text-white text-[25px] md:text-[40px] font-bold">Hii, I'm Arjun <span style={{ animation: "spin 1s linear infinite" }}>👋</span>
+                <div className="text-white text-[25px] md:text-[40px] font-bold">
+                  Hii, I'm Arjun <span className="inline-block animate-wave">👋</span>
                 </div>
                 <div className="text-green-600 text-[14px] md:text-[20px] font-bold">MERN Stack developer</div>
                 </div>
@@ -44,6 +53,49 @@ export const Home = () => {
                 </div>
             </div>
         </div>
+        <div className=""></div>
+        <Education/>
+        <Skills/>
+        <Project/>
+        <div className="flex w-full justify-center p-10">
+          <div className="text-white"></div>
+        <a
+                href="mailto:saarjun04@gmail.com"
+                className="text-white flex gap-5 items-center px-4 py-2 text-sm hover:scale-125 transition-all"
+              >
+                <img src={maillogo} className="h-5 w-5 object-cover" alt="Mail logo" />
+                
+              </a>
+                <a
+                  href="tel:+918778799891"
+                  className="text-white flex  gap-5 items-center px-4 py-2 text-sm hover:scale-125 transition-all"
+                >
+                  <img src={phonelogo} className="h-5 w-5" alt="Phone logo" />
+                  
+                </a>
+                <a
+                  href="https://wa.me/+918778799891"
+                  className="text-white flex gap-5 items-center px-4 py-2 text-sm hover:scale-125 transition-all"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={wplogo} className="h-5 w-5 " alt="WhatsApp logo" />
+                  
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/arjun-bala-906721251/"
+                  className="text-white flex gap-5 items-center px-4 py-2 text-sm hover:scale-125 transition-all"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={linkidinlogo} className='h-5' alt=""  />
+  
+                </a>
+
+        </div>
+
+        </div>
+
     </>
   )
 }
