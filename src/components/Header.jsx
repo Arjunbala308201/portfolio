@@ -28,7 +28,7 @@ export const Header = () => {
         <IoIosMenu />
         </div>
         {openSidebar &&
-        <NavbarComponents  openSideBar={openSideBar}/>
+        <NavbarComponents  smoothScroll={smoothScroll} openSideBar={openSideBar}/>
       }
         <div className="sm:flex  hidden sm:justify-around h-full w-full"> 
         <a
