@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Co
 import 'react-toastify/dist/ReactToastify.css';
 import { Main } from './components/Main';
 import { Home } from './components/Home';
-import 'aos/dist/aos.css'; // Import the AOS styles
+// import 'aos/dist/aos.css';
 function App() {
   return (
     <>

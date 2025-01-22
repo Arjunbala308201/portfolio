@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.8f2719c8.css",
-    "main.js": "/static/js/main.f4fdcd62.js",
+    "main.css": "/static/css/main.8c4df1f8.css",
+    "main.js": "/static/js/main.9263a59e.js",
     "static/js/488.e75445ad.chunk.js": "/static/js/488.e75445ad.chunk.js",
     "static/media/Arjun Image2.jpg": "/static/media/Arjun Image2.a3f2582ade63315efa2f.jpg",
     "static/media/reactlogo2.png": "/static/media/reactlogo2.6bcffb56bd0efaa47767.png",
     "static/media/whatsappicon.png": "/static/media/whatsappicon.e714b606dde3163f5ddb.png",
     "static/media/ExpressJS logo.png": "/static/media/ExpressJS logo.6a3e055a6226b08114ef.png",
+    "static/media/maillogonew.jpg": "/static/media/maillogonew.b8101dd783c49f47cbfd.jpg",
     "static/media/html logo.png": "/static/media/html logo.d3a346fb25437f9e9784.png",
     "static/media/phonelogo.png": "/static/media/phonelogo.053c028d18b6ef9b5700.png",
     "static/media/linkidin logo.png": "/static/media/linkidin logo.f916e9d7e699cadd309a.png",
@@ -16,12 +17,12 @@
     "static/media/GitHub.png": "/static/media/GitHub.d602c8763da57ff3f186.png",
     "static/media/node logo.png": "/static/media/node logo.cce26687ab3abd526b3e.png",
     "index.html": "/index.html",
-    "main.8f2719c8.css.map": "/static/css/main.8f2719c8.css.map",
-    "main.f4fdcd62.js.map": "/static/js/main.f4fdcd62.js.map",
+    "main.8c4df1f8.css.map": "/static/css/main.8c4df1f8.css.map",
+    "main.9263a59e.js.map": "/static/js/main.9263a59e.js.map",
     "488.e75445ad.chunk.js.map": "/static/js/488.e75445ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f2719c8.css",
-    "static/js/main.f4fdcd62.js"
+    "static/css/main.8c4df1f8.css",
+    "static/js/main.9263a59e.js"
   ]
 }

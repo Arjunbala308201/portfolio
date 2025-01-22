@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import { Education } from './Education';
 import { Skills } from './Skills';
 import { Project } from './Project';
-import maillogo from '../assets/mail logo2.jpeg';
+import maillogo from '../assets/maillogonew.jpg'
 import phonelogo from '../assets/phonelogo.png';
 import linkidinlogo from '../assets/linkidin logo.png';
 import wplogo from '../assets/whatsappicon.png';
@@ -19,29 +19,30 @@ export const Home = () => {
       <div className="mt-20" id='about'>
         <About/>
       </div>
-        <div className="pt-28" id='education'>
+        <div className="pt-10 sm:pt-20" id='education'>
         <Education />
         </div>
-        <div className="pt-28 min-h-[70vh]" id='projects'>
+        <div className="pt-10 sm:pt-20 min-h-[70vh]" id='projects'>
         <Project/>
         </div>
-        <div className="pt-28" id='skills'>
+        <div className="pt-10 sm:pt-20" id='skills'>
         <Skills/>
         </div>
-        <div className="flex w-full justify-center p-10 pt-28">
-          <div className="text-white"></div>
-        <a
+        <div className="w-full justify-center px-6 pt-20 sm:ps-16">
+          <div className="text-white text-[20px] sm:text-[30px] font-bold">Reach Out Me</div>
+          <div className="flex mt-5 sm:gap-10 justify-center">
+          <a
                 href="mailto:saarjun04@gmail.com"
                 className="text-white flex gap-5 items-center px-4 py-2 text-sm hover:scale-125 transition-all"
               >
-                <img src={maillogo} className="h-5 w-5 object-cover" alt="Mail logo" />
+                <img src={maillogo} className="h-6 object-contain" alt="Mail logo" />
                 
               </a>
                 <a
                   href="tel:+918778799891"
                   className="text-white flex  gap-5 items-center px-4 py-2 text-sm hover:scale-125 transition-all"
                 >
-                  <img src={phonelogo} className="h-5 w-5" alt="Phone logo" />
+                  <img src={phonelogo} className="h-6 w-6" alt="Phone logo" />
                   
                 </a>
                 <a
@@ -50,7 +51,7 @@ export const Home = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={wplogo} className="h-5 w-5 " alt="WhatsApp logo" />
+                  <img src={wplogo} className="h-6 w-6 " alt="WhatsApp logo" />
                   
                 </a>
                 <a
@@ -59,9 +60,11 @@ export const Home = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={linkidinlogo} className='h-5' alt=""  />
+                  <img src={linkidinlogo} className='h-6' alt=""  />
   
                 </a>
+          </div>
+
 
         </div>
 
