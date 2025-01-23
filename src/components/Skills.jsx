@@ -10,7 +10,7 @@ export const Skills = () => {
   return (
     <>
         <div className='w-full flex flex-col justify-center items-center gap-10'>
-          <div className="text-white font-bold text-[20px] sm:text-[30px]  w-full container mx-auto bg px-6 sm:px-16">Skills</div>
+          <div className="text-white font-bold text-[20px] sm:text-[30px]  w-full mx-auto bg px-6 sm:px-16">Skills</div>
           <div className="flex-col gap-5 mt-10 flex md:flex-row md:gap-20 ">
             <div className="flex w-full justify-center items-center">
           <img src={expresslogo} alt="Express Logo" data-aos='fade-right' className="h-8 w-24  sm:h-14 sm:w-48  object-fill bg-white hover:scale-110 transition-all" />

@@ -14,7 +14,7 @@ export const Dropdown = ({isDropdownOpen,width}) => {
               role="menu"
               aria-orientation="vertical"
               aria-labelledby="menu-button"
-            //   data-aos='fade-down'
+              data-aos='fade-down'
             >
               <div className="py-1">
               <a

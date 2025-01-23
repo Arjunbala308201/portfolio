@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Dropdown } from './Dropdown';
 import { FaArrowLeft } from "react-icons/fa";
 
-export const NavbarComponents = ({ openSideBar, smoothScroll }) => {
+export const SideBar = ({ openSideBar, smoothScroll }) => {
     const [Contactme, setOpencontactMe] = useState(false);
 
     const openContactMe = () => {
@@ -12,12 +12,17 @@ export const NavbarComponents = ({ openSideBar, smoothScroll }) => {
     return (
         <>
             <div
-                className="fixed h-full top-0 right-0 z-10 mt-0 rounded-md bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5 w-2/5"
-                role="menu"
-                aria-orientation="vertical"
-                aria-labelledby="menu-button"
-                data-aos="fade-left"
-            >
+                className="fixed inset-0 bg-black bg-opacity-50 z-50"
+                onClick={openSideBar} // Closes sidebar when clicking outside
+                >
+                <div
+                    className="fixed h-full top-0 right-0 mt-0 bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5 w-2/5 transition-opacity"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="menu-button"
+                    data-aos="fade-left"
+                    onClick={(e) => e.stopPropagation()} // Prevent clicks inside the sidebar from closing it
+                >
                 <div
                     className="flex w-full pt-10 hover:text-white transition-all ps-2"
                     onClick={openSideBar}
@@ -61,6 +66,7 @@ export const NavbarComponents = ({ openSideBar, smoothScroll }) => {
                     </div>
                     {Contactme && <Dropdown width={'fit-content'} />}
                 </div>
+            </div>
             </div>
         </>
     );

@@ -12,7 +12,7 @@ module.exports = {
         },
       },
       animation: {
-        wave: "wave 1.5s",
+        wave: "wave 1s",
       },
     },
   },
