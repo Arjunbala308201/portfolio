@@ -17,16 +17,16 @@ export const Home = () => {
   return (
     <>
     <div className="flex flex-col">
-        <div className=" sm:min-h-screen flex flexcol items-center py-10 sm:py-0" id='about'>
+        <div className=" sm:min-h-screen flex flexcol items-center sm:py-0" id='about'>
           <About/>
         </div>
-        <div className="sm:min-h-screen flex flexcol items-center py-10 sm:py-0" id='education'>
+        <div className="sm:min-h-screen flex flexcol items-center sm:py-0" id='education'>
         <Education />
         </div>
-        <div className="sm:min-h-screen flex flexcol py-10 sm:py-0 " id='projects'>
+        <div className="sm:min-h-screen flex flexcol  sm:py-0 " id='projects'>
         <Project/>
         </div>
-        <div className=" flex flexcol items-center justify-center py-10 sm:py-0" id='skills'>
+        <div className=" flex flexcol items-center justify-center sm:py-0" id='skills'>
         <Skills/>
         </div>
         <Contactme/>
