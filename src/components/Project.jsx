@@ -8,7 +8,7 @@ export const Project = () => {
             <br />
             <div className="text-white">
                 <div className="text-[18px] sm:text-[25px] font-bold text-green-600 ">E-Commerce web-app (Flipkart Clone) &nbsp;&nbsp; 
-                    <a className='hover:text-green-600 text-white font-semibold text-xs ' href="https://e-commerce-1-hr5r.onrender.com/">Visit Project</a>
+                    <a className='hover:text-green-600 text-white font-semibold text-xs ' href="https://e-commerce-1-xee4.onrender.com/">Visit Project</a>
                 </div>
                 <br />
                 <div className="text-sm sm:text-[15px]">
