@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export const About = () => {
   return (
     <>
-    <div className=" flex-col-reverse md:flex md:flex-row py-10 justify-center items-center px-10 md:px-20 flex gap-10 w-full ">
+    <div className=" flex-col-reverse md:flex md:flex-row py-10 justify-center items-center px-10 md:px-20 flex gap-10 w-full min-h-screen ">
             <div  className="content w-full md:w-1/2 flex flex-col gap-5" data-aos="fade-right">
                 <div className="flex flex-col">
                 <div className="text-white text-[25px] md:text-[40px] font-bold">

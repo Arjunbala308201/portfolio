@@ -7,7 +7,9 @@ export const Project = () => {
             <div className="text-white text-[20px] w-full sm:text-[30px] font-bold">Projects</div>
             <br />
             <div className="text-white">
-                <div className="text-[18px] sm:text-[25px] font-bold text-green-600 ">E-Commerce web-app (Flipkart Clone)</div>
+                <div className="text-[18px] sm:text-[25px] font-bold text-green-600 ">E-Commerce web-app (Flipkart Clone) &nbsp;&nbsp; 
+                    <a className='hover:text-green-600 text-white font-semibold text-xs ' href="https://e-commerce-1-hr5r.onrender.com/">Visit Project</a>
+                </div>
                 <br />
                 <div className="text-sm sm:text-[15px]">
                 Developed a feature-rich e-commerce platform replicating core functionalities of Flipkart, such as user authentication, dynamic product management, and secure checkout. This full-stack project offers category-based filtering, sorting, and search optimization, providing a seamless and scalable shopping experience.
