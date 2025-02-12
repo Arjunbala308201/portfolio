@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../assets/Arjun Resume rev 5.0.pdf';
+import resume from '../assets/Arjun S.A Resume rev 9.0.pdf';
 import { GoDownload } from 'react-icons/go';
 
 export const Resume = () => {
