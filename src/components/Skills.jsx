@@ -6,6 +6,7 @@ import mongologo from '../assets/mongo db logo.png'
 import htmllogo from '../assets/html logo.png'
 import csslogo from '../assets/css logo2.png'
 import nodelogo from '../assets/node logo.png'
+
 export const Skills = () => {
   return (
     <>

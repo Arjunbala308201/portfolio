@@ -1,10 +1,35 @@
-/* src/index.css or your custom CSS file */
-
-/* Import the base styles */
 @tailwind base;
 
-/* Import the component styles */
 @tailwind components;
 
-/* Import the utility styles */
 @tailwind utilities;
+
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-left {
+    animation: slideInLeft 1s ease-in-out forwards;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-right {
+    animation: slideInRight 1s ease-in-out forwards;
+  }
