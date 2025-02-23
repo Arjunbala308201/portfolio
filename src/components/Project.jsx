@@ -19,7 +19,7 @@ return (
                             </div>
                             <br />
                             <div className="flex w-full justify-center">
-                            <div className="w-1/2 h-[300px] overflow-hidden relative rounded-md group flex justify-center items-center">
+                            <div className="w-full mt-[50px] sm:mt-[10px] md:w-2/3 h-[150px] sm:h-[300px] overflow-hidden relative rounded-md group flex justify-center items-center">
                             <video
                                     src={ecomvdo}
                                     autoPlay
@@ -29,14 +29,13 @@ return (
                                     className="absolute w-full h-auto object-cover top-[-15%] group-hover:scale-110 transition-all duration-300 group-hover:opacity-30"
                             />
 
-    {/* Text & Link - Hidden by default, appear on hover */}
-                    <div className="absolute hidden group-hover:flex transition-opacity duration-300 text-center text-white px-2 py-1  flex-col gap-3 justify-center items-center">
+                    <div className="absolute hidden group-hover:flex md:top-10 lg:top-20 transition-opacity duration-300 text-center text-white px-2 py-1  flex-col gap-3 justify-center items-center">
                             <p className="font-bold text-xl">FlipKart Clone</p>
-                            <p>Developed a fully functional e-commerce platform in MERN, and hosted</p>
+                            <p className='text-xs sm:text-sm'>Developed a fully functional e-commerce platform in MERN.</p>
                             
                             <Link
                             to="https://e-commerce-1-xee4.onrender.com/"
-                           className="bg-green-600  text-sm justify-around text-white font-semibold rounded-md hover:scale-105 transition-all flex items-center md:justify-around md:text-[15px] md:px-3 py-2 md:gap-5 "
+                           className="bg-green-600  text-sm justify-around text-white font-semibold rounded-md hover:scale-105 transition-all flex items-center md:justify-around md:text-[15px] md:px-3 py-2 md:gap-5 px-2"
                             >
                             Visit Project
                             </Link>
@@ -70,8 +69,8 @@ return (
                             The Task Manager App is a MERN stack-based web application designed to help users efficiently manage their daily tasks. It allows users to create, update, and track their tasks with features like categorization, status updates, and due dates.
                             </div>
                             <br />
-                            <div className="flex w-full gap-5 ">
-                            <div className="overflow-hidden w-1/2 rounded-md group flex flex-col relative justify-center items-center">
+                            <div className="sm:flex w-full gap-5 ">
+                            <div className="overflow-hidden  sm:w-1/2 rounded-md group flex flex-col relative justify-center items-center">
                                     <img 
                                             src={taskmanagerimg1} 
                                             alt="" 
@@ -85,14 +84,14 @@ return (
                                     </p>
                                     <Link
                                     to="https://task-manager-4-react.onrender.com/"
-                                    className="bg-green-600  text-sm justify-around text-white font-semibold rounded-md hover:scale-105 transition-all flex items-center md:justify-around md:text-[15px] md:px-3 py-2 md:gap-5 "
+                                    className="bg-green-600 px-2 text-sm justify-around text-white font-semibold rounded-md hover:scale-105 transition-all flex items-center md:justify-around md:text-[15px] md:px-3 py-2 md:gap-5 "
                                     >
                                     Visit Project
                                     </Link>
                                     </div>
                             </div>
-
-                            <div className="overflow-hidden w-1/2 rounded-md group flex flex-col relative justify-center items-center">
+                                <br />
+                            <div className="overflow-hidden sm:w-1/2 rounded-md group flex flex-col relative justify-center items-center">
                                     <img 
                                             src={taskmanagerimg2} 
                                             alt="" 
@@ -106,7 +105,7 @@ return (
                                     </p>
                                     <Link
                                     to="https://task-manager-4-react.onrender.com/"
-                                    className="bg-green-600  text-sm justify-around text-white font-semibold rounded-md hover:scale-105 transition-all flex items-center md:justify-around md:text-[15px] md:px-3 py-2 md:gap-5 "
+                                    className="bg-green-600 px-2 text-sm justify-around text-white font-semibold rounded-md hover:scale-105 transition-all flex items-center md:justify-around md:text-[15px] md:px-3 py-2 md:gap-5 "
                                     >
                                     Visit Project
                                     </Link>
