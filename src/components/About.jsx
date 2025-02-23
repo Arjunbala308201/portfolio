@@ -3,11 +3,12 @@ import arjunimg from "../assets/Arjun Image2.jpg";
 import { GoDownload } from "react-icons/go";
 import github from "../assets/GitHub.png";
 import { Link } from "react-router-dom";
-import AOS from "aos";
+
 import "aos/dist/aos.css";
 import '../App.css'
 export const About = () => {
-
+  const text1 = "Arjun Bala";  // 11 characters (including space)
+  const text2 = "MERN Stack Developer & Freelancer"; // Longer text
   return (
     <>
       <div className="flex-col-reverse md:flex md:flex-row py-10 justify-center items-center px-10 md:px-20 flex gap-10 w-full ">
@@ -15,14 +16,34 @@ export const About = () => {
           className=" slide-left content w-full md:w-1/2 flex flex-col gap-5"
           // data-aos="fade-right"
         >
-          <div className="flex flex-col">
-            <div className="text-white text-[25px] md:text-[40px] font-bold">
-              Hii, I'm Arjun <span className="inline-block animate-wave">👋</span>
-            </div>
-            <div className="text-green-600 text-[14px] md:text-[20px] font-bold">
-              MERN Stack Developer
-            </div>
-          </div>
+<div className="flex flex-col items-start">
+  {/* First Typewriter Effect - Name */}
+  <div className="flex items-center text-white text-[15px] md:text-[25px]">
+    <span className="h-[50px] flex items-end">
+      Hii, I'm 
+    </span>
+    <span 
+      className="typewriter text-green-600 text-[25px] md:text-[40px] font-bold ml-2 mt-[20px] sm:mt-0"
+      style={{ "--text-length": "12ch" }} // Adjust width dynamically
+    >
+      Arjun Bala
+    </span>
+  </div>
+
+  {/* Second Typewriter Effect - Title with 2s delay */}
+  <div 
+    className="typewriter text-green-600 text-[14px] md:text-[20px] font-bold"
+    style={{ "--text-length": "25ch", "animation-delay": "2s" }} // Delayed start
+  >
+    MERN <span className="text-white font-normal">Stack Developer</span>
+  </div>
+</div>
+
+
+
+
+
+
           <div className="text-gray-500 text-sm md:text-[14px]">
             My focus is on creating responsive and user-friendly websites, with
             a keen eye for enhancing user interaction through visually engaging

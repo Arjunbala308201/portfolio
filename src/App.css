@@ -4,32 +4,33 @@
 
 @tailwind utilities;
 
-@keyframes slideInLeft {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
+
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid green;
+  white-space: nowrap;
+  display: inline-block;
+  letter-spacing: 0.15em;
+  line-height: 1.5;
   
-  .slide-left {
-    animation: slideInLeft 1s ease-in-out forwards;
-  }
-  
-  @keyframes slideInRight {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  .slide-right {
-    animation: slideInRight 1s ease-in-out forwards;
-  }
+  /* Start with width 0 and animate */
+  width: 0;
+  animation: 
+    typing 2s steps(40, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: var(--text-length, 14ch); } /* Dynamically adjust width */
+}
+
+/* Cursor blinking */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: green; }
+}
+
+
+
