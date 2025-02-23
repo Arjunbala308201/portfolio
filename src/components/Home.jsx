@@ -20,7 +20,7 @@ export const Home = () => {
         <div className=" sm:min-h-screen flex flexcol items-center sm:py-0" id='about'>
           <About/>
         </div>
-        <div className="sm:min-h-screen flex flexcol items-center sm:py-0" id='education'>
+        <div className=" flex flexcol items-center sm:py-0" id='education'>
         <Education />
         </div>
         <div className="sm:min-h-screen flex flexcol  sm:py-0 " id='projects'>

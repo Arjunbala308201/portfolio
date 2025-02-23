@@ -7,25 +7,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import '../App.css'
 export const About = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 5000, // Try increasing the value
-      easing: "ease-in-out",
-      // delay: 100,
-      once: false,
-      mirror: true,
-      anchorPlacement: "top-bottom",
-    });
-  
-    return () => {
-      AOS.refreshHard();
-    };
-  }, []);
-  
 
   return (
     <>
-      <div className="flex-col-reverse md:flex md:flex-row py-10 justify-center items-center px-10 md:px-20 flex gap-10 w-full min-h-screen">
+      <div className="flex-col-reverse md:flex md:flex-row py-10 justify-center items-center px-10 md:px-20 flex gap-10 w-full ">
         <div
           className=" slide-left content w-full md:w-1/2 flex flex-col gap-5"
           // data-aos="fade-right"

@@ -1,85 +1,111 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import { IoIosMenu } from "react-icons/io";
-import { Dropdown } from './Dropdown';
-import { SideBar } from './SideBar';
+import { Dropdown } from "./Dropdown";
+import { SideBar } from "./SideBar";
 
 export const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [openSidebar, setOpenSidebar] = useState(false);
-  const [activeSection, setActiveSection] = useState('about'); // Track active section
-
-  const sections = ['about', 'education', 'projects', 'skills'];
+  const [activeSection, setActiveSection] = useState("about");
 
   const openSideBar = () => {
     setOpenSidebar(!openSidebar);
   };
 
   const smoothScroll = (e, targetId) => {
+    console.log(targetId,'id')
+    setActiveSection(targetId)
     e.preventDefault();
     const targetElement = document.getElementById(targetId);
-    targetElement.scrollIntoView({ behavior: 'smooth' });
+    targetElement.scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {
     const observerCallback = (entries) => {
+      console.log(entries,'entries')
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          setActiveSection(entry.target.id); // Update active section
+          setActiveSection(entry.target.id);
         }
       });
     };
 
     const observerOptions = {
       root: null,
-      threshold: 0.6, // Trigger when 60% of the section is visible
+      threshold: 0.6,
     };
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-    sections.forEach((section) => {
+    ["about", "education", "projects", "skills"].forEach((section) => {
       const element = document.getElementById(section);
       if (element) observer.observe(element);
     });
 
     return () => {
-      sections.forEach((section) => {
+      ["about", "education", "projects", "skills"].forEach((section) => {
         const element = document.getElementById(section);
         if (element) observer.unobserve(element);
       });
     };
-    
-  });
+  }, []);
 
   return (
     <div className="bg-gray-800 mx-auto h-20 w-full text-gray-500 z-1000">
       <div className="flex justify-end px-5 sm:p-0 items-center w-full h-full sm:justify-around">
-        {/* Navigation Links */}
+        {/* Mobile Menu Icon */}
         <div className="flex text-white text-[30px] sm:hidden" onClick={openSideBar}>
           <IoIosMenu />
         </div>
-        <div className="">
-          {openSidebar && (
-            <SideBar smoothScroll={smoothScroll} openSideBar={openSideBar} />
-          )}
-        </div>
+
+        {/* Sidebar */}
+        {openSidebar && <SideBar smoothScroll={smoothScroll} openSideBar={openSideBar} />}
+
+        {/* Navigation Links */}
         <div className="sm:flex hidden sm:justify-around h-full w-full">
-          {sections.map((section) => (
-            <a
-              key={section}
-              href={`#${section}`}
-              onClick={(e) => smoothScroll(e, section)}
-              className={`hover:text-[18px] hover:text-white hover:font-semibold transition-all h-full flex items-center w-20 justify-center ${
-                activeSection === section ? 'border-b-2 text-white' : ''
-              }`}
-            >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
-            </a>
-          ))}
+          <a
+            href="#about"
+            onClick={(e) => smoothScroll(e, "about")}
+            className={`hover:text-[18px] hover:text-white hover:font-semibold transition-all h-full flex items-center w-20 justify-center ${
+              activeSection === "about" ? "border-b-2 text-white" : ""
+            }`}
+          >
+            About
+          </a>
+          <a
+            href="#education"
+            onClick={(e) => smoothScroll(e, "education")}
+            className={`hover:text-[18px] hover:text-white hover:font-semibold transition-all h-full flex items-center w-20 justify-center ${
+              activeSection === "education" ? "border-b-2 text-white" : ""
+            }`}
+          >
+            Education
+          </a>
+          <a
+            href="#projects"
+            onClick={(e) => smoothScroll(e, "projects")}
+            className={`hover:text-[18px] hover:text-white hover:font-semibold transition-all h-full flex items-center w-20 justify-center ${
+              activeSection === "projects" ? "border-b-2 text-white" : ""
+            }`}
+          >
+            Projects
+          </a>
+          <a
+            href="#skills"
+            onClick={(e) => smoothScroll(e, "skills")}
+            className={`hover:text-[18px] hover:text-white hover:font-semibold transition-all h-full flex items-center w-20 justify-center ${
+              activeSection === "skills" ? "border-b-2 text-white" : ""
+            }`}
+          >
+            Skills
+          </a>
+
+          {/* Contact Me Dropdown */}
           <div className="relative inline-block text-left">
             <div
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               className={`inline-flex justify-between rounded-md h-full items-center border-gray-700 bg-gray-800 px-4 py-2 focus:outline-none border-0 cursor-pointer ${
-                isDropdownOpen ? 'text-white' : ''
+                isDropdownOpen ? "text-white" : ""
               }`}
             >
               Contact Me
