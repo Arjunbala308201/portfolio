@@ -54,7 +54,7 @@ export const Header = () => {
     <div className="bg-gray-800 mx-auto h-20 w-full text-gray-500 z-1000">
       <div className="flex justify-end px-5 sm:p-0 items-center w-full h-full sm:justify-around">
         {/* Mobile Menu Icon */}
-        <div className="flex text-white text-[30px] sm:hidden" onClick={openSideBar}>
+        <div className="flex text-green-600 text-[30px] sm:hidden" onClick={openSideBar}>
           <IoIosMenu />
         </div>
 
@@ -66,8 +66,8 @@ export const Header = () => {
           <a
             href="#about"
             onClick={(e) => smoothScroll(e, "about")}
-            className={`hover:text-[18px] hover:text-white hover:font-semibold transition-all h-full flex items-center w-20 justify-center ${
-              activeSection === "about" ? "border-b-2 text-white" : ""
+            className={`hover:text-[18px] hover:text-green-600 hover:font-semibold transition-all h-full flex items-center w-20 justify-center ${
+              activeSection === "about" ? "border-b-2 border-green-600 text-green-600" : ""
             }`}
           >
             About
@@ -75,8 +75,8 @@ export const Header = () => {
           <a
             href="#education"
             onClick={(e) => smoothScroll(e, "education")}
-            className={`hover:text-[18px] hover:text-white hover:font-semibold transition-all h-full flex items-center w-20 justify-center ${
-              activeSection === "education" ? "border-b-2 text-white" : ""
+            className={`hover:text-[18px] hover:text-green-600 hover:font-semibold transition-all h-full flex items-center w-20 justify-center ${
+              activeSection === "education" ? "border-b-2 border-green-600 text-green-600" : ""
             }`}
           >
             Education
@@ -84,8 +84,8 @@ export const Header = () => {
           <a
             href="#projects"
             onClick={(e) => smoothScroll(e, "projects")}
-            className={`hover:text-[18px] hover:text-white hover:font-semibold transition-all h-full flex items-center w-20 justify-center ${
-              activeSection === "projects" ? "border-b-2 text-white" : ""
+            className={`hover:text-[18px] hover:text-green-600 hover:font-semibold transition-all h-full flex items-center w-20 justify-center ${
+              activeSection === "projects" ? "border-b-2 border-green-600 text-green-600" : ""
             }`}
           >
             Projects
@@ -93,8 +93,8 @@ export const Header = () => {
           <a
             href="#skills"
             onClick={(e) => smoothScroll(e, "skills")}
-            className={`hover:text-[18px] hover:text-white hover:font-semibold transition-all h-full flex items-center w-20 justify-center ${
-              activeSection === "skills" ? "border-b-2 text-white" : ""
+            className={`hover:text-[18px] hover:text-green-600 hover:font-semibold transition-all h-full flex items-center w-20 justify-center ${
+              activeSection === "skills" ? "border-b-2 border-green-600 text-green-600" : ""
             }`}
           >
             Skills
@@ -105,7 +105,7 @@ export const Header = () => {
             <div
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               className={`inline-flex justify-between rounded-md h-full items-center border-gray-700 bg-gray-800 px-4 py-2 focus:outline-none border-0 cursor-pointer ${
-                isDropdownOpen ? "text-white" : ""
+                isDropdownOpen ? "text-green-600" : ""
               }`}
             >
               Contact Me

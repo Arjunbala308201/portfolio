@@ -11,29 +11,30 @@ export const About = () => {
   const text2 = "MERN Stack Developer & Freelancer"; // Longer text
   return (
     <>
-      <div className="flex-col-reverse md:flex md:flex-row py-10 justify-center items-center px-10 md:px-20 flex gap-10 w-full ">
+      <div className="flex-col-reverse md:flex w-[80%] mx-auto md:flex-row py-10 justify-center items-center  flex ">
         <div
           className=" slide-left content w-full md:w-1/2 flex flex-col gap-5"
-          // data-aos="fade-right"
+          data-aos="fade-right"
+          data-aos-duration="1200"
         >
-<div className="flex flex-col items-start">
-  {/* First Typewriter Effect - Name */}
-  <div className="flex items-center text-white text-[15px] md:text-[25px]">
-    <span className="h-[50px] flex items-end">
-      Hii, I'm 
-    </span>
-    <span 
-      className="typewriter text-green-600 text-[25px] md:text-[40px] font-bold ml-2 mt-[20px] sm:mt-0"
-      style={{ "--text-length": "12ch" }} // Adjust width dynamically
-    >
-      Arjun Bala
-    </span>
-  </div>
+        <div className="flex flex-col items-start">
+          {/* First Typewriter Effect - Name */}
+          <div className="flex items-center text-white text-[15px] md:text-[25px]">
+            <span className="h-[50px] flex items-end">
+              Hii, I'm 
+            </span>
+            <span 
+              className="typewriter text-green-600 text-[25px] md:text-[40px] font-bold ml-2 mt-[20px]"
+              style={{ "--text-length": "12ch" ,"animation-delay": ".7s"}} // Adjust width dynamically
+            >
+              Arjun Bala
+            </span>
+          </div>
 
   {/* Second Typewriter Effect - Title with 2s delay */}
   <div 
     className="typewriter text-green-600 text-[14px] md:text-[20px] font-bold"
-    style={{ "--text-length": "25ch", "animation-delay": "2s" }} // Delayed start
+    style={{ "--text-length": "25ch", "animation-delay": "2.5s" }} // Delayed start
   >
     MERN <span className="text-white font-normal">Stack Developer</span>
   </div>
@@ -74,7 +75,8 @@ export const About = () => {
           </div>
         </div>
         <div 
-        // data-aos="fade-left" 
+        data-aos="fade-left" 
+        data-aos-duration="1200"
         className="slide-right md:w-1/2 w-full">
           <div className="pic w-full flex justify-center">
             <div className="rounded-full bg-white h-32 w-32 sm:h-60 sm:w-60 overflow-hidden">
